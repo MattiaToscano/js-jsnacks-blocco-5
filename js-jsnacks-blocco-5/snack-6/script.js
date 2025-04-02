@@ -12,3 +12,17 @@ const zucchine = [
 ];
 
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
+
+const zucchineLunghe = [];
+const zucchineRestanti = [];
+zucchine.forEach((zucchina) => {
+  if (zucchina.length >= 15) {
+    zucchineLunghe.push(zucchina);
+  }
+  else {
+    zucchineRestanti.push(zucchina);
+  }
+})
+
+console.log('Zucchine lunghe:', zucchineLunghe);
+console.log('Zucchine restanti:', zucchineRestanti);
